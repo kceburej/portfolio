@@ -1,0 +1,453 @@
+import x1 from "./1.png";
+import x12 from "./1-2.png";
+import x13 from "./1-3.png";
+import x14 from "./1-4.png";
+import x15 from "./1-5.png";
+import x16 from "./1-6.png";
+import x17 from "./1-7.png";
+import x18 from "./1-8.png";
+import x31 from "./3-1.png";
+import x41 from "./4-1.png";
+import x041 from "./04-1.png";
+import x091 from "./09-1.png";
+import x141 from "./14-1.png";
+import x151 from "./15-1.png";
+import x161 from "./16-1.png";
+import x171 from "./17-1.png";
+import x181 from "./18-1.png";
+import x191 from "./19-1.png";
+import x201 from "./20-1.png";
+import x331 from "./33-1.png";
+import x332 from "./33-2.png";
+import x362 from "./36-2.png";
+import x721 from "./72-1.png";
+import cfa434e81E5149Ed90C09B341C55Fcd11 from "./cfa434e8-1e51-49ed-90c0-9b341c55fcd1-1.png";
+import generatedImage711 from "./generated-image-7-1-1.png";
+import generatedImage161 from "./generated-image-16-1.png";
+import generatedImage211 from "./generated-image-21-1.png";
+import image from "./image.png";
+import image1 from "./image.svg";
+import image2 from "./image-2.svg";
+import image3 from "./image-3.svg";
+import image23 from "./image-23.png";
+import image33 from "./image-33.png";
+import image48 from "./image-48.png";
+import image49 from "./image-49.png";
+import image50 from "./image-50.png";
+import image51 from "./image-51.png";
+import image89 from "./image-89.png";
+import image90 from "./image-90.png";
+import image91 from "./image-91.png";
+import line130 from "./line-130.svg";
+import line131 from "./line-131.svg";
+import rectangle14 from "./rectangle-14.png";
+import rectangle142 from "./rectangle-14-2.png";
+import rectangle143 from "./rectangle-14-3.png";
+import rectangle144 from "./rectangle-14-4.png";
+import rectangle145 from "./rectangle-14-5.png";
+import vector from "./vector.png";
+import vector2 from "./vector-2.png";
+import vector3 from "./vector-3.png";
+import vector4 from "./vector-4.png";
+import vector5 from "./vector-5.png";
+
+const paletteCards = [
+  {
+    id: "purple",
+    containerClass: "absolute top-[2683px] -left-14 w-[405px] h-[339px] flex",
+    innerClass: "w-[425px] h-[339px] relative",
+    vector: vector,
+    rectangle: rectangle14,
+    rectangleClass: "absolute w-[86.82%] h-full top-0 left-[13.18%]",
+    labelClass:
+      "absolute w-[42.35%] h-[13.57%] top-[84.07%] left-[28.71%] [font-family:'Aquawax_Pro-Bold',Helvetica] font-bold text-white text-[40px] tracking-[0] leading-[normal] whitespace-nowrap",
+    label: "#5C318A",
+  },
+  {
+    id: "pink",
+    containerClass:
+      "absolute top-[2683px] left-[232px] w-[405px] h-[339px] flex",
+    innerClass: "w-[425px] h-[339px] relative",
+    vector: vector2,
+    rectangle: rectangle142,
+    rectangleClass: "absolute w-[97.88%] h-full top-0 left-[2.12%]",
+    labelClass:
+      "absolute w-[40.94%] h-[13.57%] top-[84.07%] left-[32.24%] [font-family:'Aquawax_Pro-Bold',Helvetica] font-bold text-white text-[40px] tracking-[0] leading-[normal] whitespace-nowrap",
+    label: "#E97EA1",
+  },
+  {
+    id: "cream",
+    containerClass:
+      "absolute top-[2683px] left-[500px] w-[405px] h-[339px] flex",
+    innerClass: "w-[425px] h-[339px] ml-[11px] relative",
+    vector: vector3,
+    rectangle: rectangle143,
+    rectangleClass: "absolute w-[97.88%] h-full top-0 left-[2.12%]",
+    labelClass:
+      "absolute w-[40.71%] h-[13.57%] top-[84.07%] left-[32.24%] [font-family:'Aquawax_Pro-Bold',Helvetica] font-bold text-[#5c318a] text-[40px] tracking-[0] leading-[normal] whitespace-nowrap",
+    label: "#FCF9E1",
+  },
+  {
+    id: "dark-purple",
+    containerClass:
+      "absolute top-[2683px] left-[810px] w-[405px] h-[339px] flex",
+    innerClass: "w-[425px] h-[339px] relative",
+    vector: vector4,
+    rectangle: rectangle144,
+    rectangleClass: "absolute w-[97.88%] h-full top-0 left-[2.12%]",
+    labelClass:
+      "absolute w-[41.41%] h-[13.57%] top-[82.60%] left-[29.18%] [font-family:'Aquawax_Pro-Bold',Helvetica] font-bold text-white text-[40px] tracking-[0] leading-[normal] whitespace-nowrap",
+    label: "#3F1E4D",
+  },
+  {
+    id: "light-purple",
+    containerClass:
+      "absolute top-[2683px] left-[1118px] w-[405px] h-[339px] flex",
+    innerClass: "w-[425px] h-[339px] relative",
+    vector: vector5,
+    rectangle: rectangle145,
+    rectangleClass: "absolute w-[97.88%] h-full top-0 left-[2.12%]",
+    labelClass:
+      "absolute w-[39.53%] h-[13.57%] top-[82.60%] left-[26.59%] [font-family:'Aquawax_Pro-Bold',Helvetica] font-bold text-white text-[40px] tracking-[0] leading-[normal] whitespace-nowrap",
+    label: "#76559F",
+  },
+];
+
+const patternTiles = [
+  {
+    src: x201,
+    className:
+      "absolute top-[5759px] left-[100px] w-[161px] h-[161px] aspect-[1] object-cover",
+  },
+  {
+    src: x191,
+    className:
+      "absolute top-[5759px] left-[280px] w-40 h-[161px] aspect-[1] object-cover",
+  },
+  {
+    src: x181,
+    className:
+      "absolute top-[5759px] left-[459px] w-[161px] h-[161px] aspect-[1] object-cover",
+  },
+  {
+    src: x171,
+    className:
+      "absolute top-[5759px] left-[639px] w-[161px] h-[161px] aspect-[1] object-cover",
+  },
+  {
+    src: x161,
+    className:
+      "absolute top-[5759px] left-[818px] w-[161px] h-[161px] aspect-[1] object-cover",
+  },
+  {
+    src: x151,
+    className:
+      "absolute top-[5759px] left-[997px] w-40 h-[161px] aspect-[1] object-cover",
+  },
+  {
+    src: x141,
+    className:
+      "absolute top-[5759px] left-[1176px] w-[161px] h-[161px] aspect-[1] object-cover",
+  },
+];
+
+export const Screen = (): JSX.Element => {
+  return (
+    <main
+      className="relative min-h-[9775px] min-w-[1440px] w-full overflow-hidden bg-white"
+      aria-label="Кейс фирменного стиля студии Осиль смолу"
+    >
+      <section aria-label="О проекте">
+        <h1 className="sr-only">Осиль смолу — фирменный стиль</h1>
+        <p className="absolute top-[746px] left-[calc(50.00%_-_623px)] whitespace-nowrap [font-family:'Montserrat-Medium',Helvetica] text-[32px] font-medium leading-[30px] tracking-[0] text-black">
+          Фирменный стиль для студии эпоксидной смолы
+        </p>
+        <p className="absolute top-[814px] left-[calc(50.00%_-_620px)] w-[863px] [font-family:'Montserrat-Regular',Helvetica] text-xl font-normal leading-[30px] tracking-[0] text-black">
+          Осиль смолу — студия и образовательное пространство для тех, кто хочет
+          научиться работать с эпоксидной смолой осознанно и уверенно. Мы делаем
+          сложный материал понятным: даём структуру, объясняем логику процессов{" "}
+          <br />и помогаем видеть результат ещё до того, как смола застынет.
+          <br />
+          <br />В основе концепции — обучение и создание изделий из смолы:
+          украшения, декор и предметы интерьера, где важны аккуратность, чистая
+          эстетика <br />и продуманная техника исполнения. Мы верим, что
+          творчество со смолой держится не на удаче, а на знании материала — и
+          именно это знание <br />
+          мы передаём каждому, кто хочет её осилить.
+        </p>
+        <h2 className="absolute top-[1167px] left-[calc(50.00%_-_620px)] whitespace-nowrap [font-family:'Montserrat-Medium',Helvetica] text-[32px] font-medium leading-[30px] tracking-[0] text-black">
+          Задача
+        </h2>
+        <p className="absolute top-[1210px] left-[calc(50.00%_-_620px)] w-[925px] [font-family:'Montserrat-Regular',Helvetica] text-xl font-normal leading-[30px] tracking-[0] text-black">
+          Комплексная разработка бренда студии эпоксидной смолы:
+          придумать&nbsp;название <br />и разработать фирменный стиль&nbsp;для
+          упаковки продукта, повышения узнаваемости <br />и доверия к компании.
+          В названии обязательно должно фигурировать слово «сила».
+        </p>
+        <img
+          className="absolute top-[1339px] left-0 h-[868px] w-[1440px] aspect-[1.66]"
+          alt="Визуальная айдентика бренда Осиль смолу"
+          src={cfa434e81E5149Ed90C09B341C55Fcd11}
+        />
+      </section>
+      <section aria-label="Логотип и цветовая палитра">
+        <img
+          className="absolute top-[2264px] left-[168px] h-[361px] w-[468px] aspect-[1.3] object-cover"
+          alt="Фрагмент фирменной айдентики"
+          src={x362}
+        />
+        <img
+          className="absolute top-[2264px] left-[calc(50.00%_+_115px)] h-[375px] w-[438px]"
+          alt=""
+          src={image1}
+        />
+        <img
+          className="absolute top-[2348px] left-[951px] h-[205px] w-[206px] aspect-[1] object-cover"
+          alt="Фирменный знак"
+          src={x721}
+        />
+        <img
+          className="absolute top-[2594px] left-[calc(50.00%_+_319px)] h-[31px] w-[31px]"
+          alt=""
+          src={image2}
+        />
+        {paletteCards.map((card) => (
+          <article
+            key={card.id}
+            className={card.containerClass}
+            aria-label={`Цвет ${card.label}`}
+          >
+            <div className={card.innerClass}>
+              <img
+                className="absolute top-0 left-[62.35%] h-full w-[37.65%]"
+                alt=""
+                src={card.vector}
+              />
+              <img
+                className={card.rectangleClass}
+                alt=""
+                src={card.rectangle}
+              />
+              <span className={card.labelClass}>{card.label}</span>
+            </div>
+          </article>
+        ))}
+
+        <img
+          className="absolute top-[3012px] left-0 h-[391px] w-[1440px] aspect-[4.01]"
+          alt="Примеры использования фирменного стиля"
+          src={image90}
+        />
+        <img
+          className="absolute top-[3130px] left-[1026px] h-[168px] w-[232px] aspect-[1.38] object-cover"
+          alt="Логотип на носителе"
+          src={x091}
+        />
+        <img
+          className="absolute top-[3156px] left-[188px] h-[115px] w-[229px] aspect-[2] object-cover"
+          alt="Фирменная надпись"
+          src={x331}
+        />
+        <img
+          className="absolute top-[3120px] left-[642px] h-[187px] w-[159px] aspect-[0.85]"
+          alt="Фирменный символ"
+          src={x332}
+        />
+        <img
+          className="absolute top-[3124px] left-[509px] h-[168px] w-0.5"
+          alt=""
+          src={line130}
+        />
+        <img
+          className="absolute top-[3124px] left-[929px] h-[168px] w-0.5"
+          alt=""
+          src={line131}
+        />
+      </section>
+      <section aria-label="Фотостиль">
+        <p className="absolute top-[3461px] left-[calc(50.00%_-_619px)] w-[953px] [font-family:'Montserrat-Regular',Helvetica] text-xl font-normal leading-[30px] tracking-[0] text-black">
+          Фотостиль «Осиль смолу» — мягкий свет и фирменная палитра, крупные
+          планы процесса (заливка, капля, полировка, руки мастера в перчатках) и
+          предметная съёмка готовых изделий на фактурных поверхностях с
+          сухоцветами и блёстками. <br />
+          Общее настроение — спокойное и эстетичное, без глянцевого пафоса, с
+          акцентом <br />
+          на аккуратность и живой творческий процесс, а не только на финальный
+          результат.
+        </p>
+        <img
+          className="absolute top-[3658px] left-[416px] h-[391px] w-[609px] aspect-[1.56]"
+          alt="Предметная фотография изделия из эпоксидной смолы"
+          src={image89}
+        />
+        <img
+          className="absolute top-[4074px] left-[101px] h-[294px] w-[294px] aspect-[1] object-cover"
+          alt="Фотография изделия"
+          src={image91}
+        />
+        <img
+          className="absolute top-[3658px] left-[101px] h-[391px] w-[294px] aspect-[0.75] object-cover"
+          alt="Процесс создания изделия"
+          src={image51}
+        />
+        <img
+          className="absolute top-[4070px] left-[415px] h-[295px] w-[295px] aspect-[1] object-cover"
+          alt="Деталь изделия из смолы"
+          src={image49}
+        />
+        <img
+          className="absolute top-[4070px] left-[730px] h-[294px] w-[294px] aspect-[1] object-cover"
+          alt="Материалы для творчества"
+          src={image50}
+        />
+        <img
+          className="absolute top-[3973px] left-[1044px] h-[391px] w-[294px] aspect-[0.75]"
+          alt="Изделие из эпоксидной смолы"
+          src={image48}
+        />
+        <img
+          className="absolute top-[3658px] left-[1045px] h-[297px] w-[295px] aspect-[0.99]"
+          alt="Фотография творческого процесса"
+          src={image33}
+        />
+      </section>
+      <section aria-label="Применение фирменного стиля">
+        <img
+          className="absolute top-[4487px] left-[102px] h-[476px] w-[714px] aspect-[1.5] object-cover"
+          alt="Пример фирменной упаковки"
+          src={x1}
+        />
+        <div className="absolute top-[4487px] left-[860px] flex h-[475px] w-[478px] bg-white">
+          <img
+            className="h-[475px] w-[478px] aspect-[1.78] object-cover"
+            alt="Применение логотипа"
+            src={x13}
+          />
+        </div>
+        <img
+          className="absolute top-[4999px] left-[523px] h-[533px] w-[819px] aspect-[1.54] object-cover"
+          alt="Носители фирменного стиля"
+          src={image}
+        />
+        <img
+          className="absolute top-[4999px] left-[101px] h-[533px] w-[400px] aspect-[0.75] object-cover"
+          alt="Фирменный макет"
+          src={image23}
+        />
+      </section>
+      <section aria-label="Фирменный паттерн">
+        <p className="absolute top-[5610px] left-[calc(50.00%_-_620px)] w-[877px] [font-family:'Montserrat-Regular',Helvetica] text-xl font-normal leading-7 tracking-[0] text-[#0d0d0d]">
+          Фирменный паттерн «Осиль смолу» представляет собой повторяющийся ритм{" "}
+          <br />
+          из декоративных символов, отсылающих к миру эпоксидной смолы,
+          творческого процесса и ручной работы. В основе паттерна — лёгкие,
+          воздушные элементы, создающие ощущение движения, фантазийности и
+          визуальной фактуры.
+        </p>
+        {patternTiles.map((tile, index) => (
+          <img
+            key={`pattern-tile-${index}`}
+            className={tile.className}
+            alt={`Элемент фирменного паттерна ${index + 1}`}
+            src={tile.src}
+          />
+        ))}
+
+        <div className="absolute top-[5998px] -left-px h-[1552px] w-[1440px] bg-[#fcf9e1]" />
+        <img
+          className="absolute top-[6056px] left-[102px] h-[617px] w-[607px] aspect-[0.98]"
+          alt="Полиграфическая продукция"
+          src={x041}
+        />
+        <img
+          className="absolute top-[6056px] left-[730px] h-[405px] w-[608px] aspect-[1.5] object-cover"
+          alt="Пример оформления продукции"
+          src={x41}
+        />
+        <img
+          className="absolute top-[6489px] left-[729px] h-[609px] w-[609px] aspect-[1] object-cover"
+          alt="Фирменный носитель"
+          src={x14}
+        />
+        <img
+          className="absolute top-[6690px] left-[102px] h-[408px] w-[613px] aspect-[1.5] object-cover"
+          alt="Полиграфия бренда"
+          src={x15}
+        />
+        <img
+          className="absolute top-[7122px] left-[98px] h-[346px] w-[609px] aspect-[1.76]"
+          alt="Брендированный материал"
+          src={x16}
+        />
+        <div className="absolute top-[7122px] left-[729px] flex h-[344px] w-[610px] bg-variable-collection-tem-fiol">
+          <img
+            className="h-[344px] w-[610px] aspect-[1.5] object-cover"
+            alt="Фирменная графика"
+            src={x31}
+          />
+        </div>
+      </section>
+      <section aria-label="Полиграфия, мерч и одежда">
+        <p className="absolute top-[7585px] left-[calc(50.00%_-_620px)] w-[735px] [font-family:'Montserrat-Regular',Helvetica] text-xl font-normal leading-7 tracking-[0] text-[#0d0d0d]">
+          Для проекта также были разработаны полиграфия (визитки, баннеры,
+          расписание), мерч и фирменная одежда для сотрудников.
+        </p>
+        <img
+          className="absolute top-[7677px] left-[623px] h-[505px] w-[714px] aspect-[1.42] object-cover"
+          alt="Фирменная одежда сотрудников"
+          src={x17}
+        />
+        <img
+          className="absolute top-[7677px] left-[100px] h-[712px] w-[503px] aspect-[0.71] object-cover"
+          alt="Мерч бренда"
+          src={x18}
+        />
+        <img
+          className="absolute top-[8212px] left-[625px] h-[522px] w-[321px] aspect-[0.62]"
+          alt="Макет рекламного материала"
+          src={generatedImage711}
+        />
+        <img
+          className="absolute top-[8212px] left-[970px] h-[522px] w-[368px] aspect-[0.7] object-cover"
+          alt="Макет фирменного носителя"
+          src={generatedImage161}
+        />
+        <img
+          className="absolute top-[8416px] left-[100px] h-[318px] w-[503px] aspect-[1.58]"
+          alt="Пример полиграфической продукции"
+          src={x12}
+        />
+      </section>
+      <section aria-label="Гайдлайн">
+        <p className="absolute top-[8797px] left-[calc(50.00%_-_620px)] w-[840px] [font-family:'Montserrat-Regular',Helvetica] text-xl font-normal leading-7 tracking-[0] text-[#0d0d0d]">
+          Гайдлайн объёмом 70+ страниц представляет собой подробное <br />
+          руководство по фирменному стилю бренда.
+          <br />
+          Он нужен для того, чтобы все, кто работает с визуальными материалами
+          компании — дизайнеры, маркетологи и подрядчики — использовали <br />
+          единые правила оформления.
+        </p>
+        <img
+          className="absolute top-[8968px] left-0 h-[807px] w-[1440px]"
+          alt="Развороты гайдлайна бренда"
+          src={image3}
+        />
+      </section>
+      <section
+        className="absolute top-[-145px] left-0 h-[810px] w-[1440px]"
+        aria-label="Обложка проекта"
+      >
+        <img
+          className="absolute top-[145px] left-0 h-[665px] w-[1440px] aspect-[1.78] object-cover"
+          alt="Осиль смолу"
+          src={generatedImage211}
+        />
+        <div
+          className="absolute top-[277px] left-[492px] h-[331px] w-[456px] bg-[url(/frame-167666691.png)] bg-cover bg-[50%_50%]"
+          role="img"
+          aria-label="Логотип Осиль смолу"
+        />
+      </section>
+    </main>
+  );
+};
